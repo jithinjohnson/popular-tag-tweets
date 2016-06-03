@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
@@ -13,7 +14,7 @@
 <body>
 
 <div class="container">
-  <h2>Popular Tag</h2>
+  <h2>Popular #Tag</h2>
   <ul class="nav nav-tabs">
     <li class="active"> <a data-toggle="tab" href="#{{popular.0}}"><span class="glyphicon glyphicon-star"></span>{{popular.0}}</a></li>
     <li><a data-toggle="tab" href="#{{popular.1}}"><span class="glyphicon glyphicon-star"></span>{{popular.1}}</a></li>
@@ -24,22 +25,22 @@
 <div>
 
   <div class="tab-content">
-   <div id="{{popular.0}}" class="tab-pane fade">
-      <h3>TWEETS</h3>
+   <div id="{{popular.0}}" class="tab-pane fade in active">
+      <h3>TWEETS <i class="fa fa-twitter" aria-hidden="true"></i></h3>
      <iframe src="http://127.0.0.1:8000/home/{{popular.0}}" width="1000" height="1000"></iframe>
     </div>
    <div id="{{popular.1}}" class="tab-pane fade">
-      <h3>TWEETS</h3>
+      <h3>TWEETS <i class="fa fa-twitter" aria-hidden="true"></i></h3>
       <iframe src="http://127.0.0.1:8000/home/{{popular.1}}" width="1000" height="1000"></iframe>
 
     </div>
     <div id="{{popular.2}}" class="tab-pane fade">
-      <h3>TWEETS</h3>
+      <h3>TWEETS <i class="fa fa-twitter" aria-hidden="true"></i></h3>
       <iframe src="http://127.0.0.1:8000/home/{{popular.2}}" width="1000" height="1000"></iframe>
 
     </div>
     <div id="{{popular.3}}" class="tab-pane fade">
-      <h3>TWEETS</h3>
+      <h3>TWEETS <i class="fa fa-twitter" aria-hidden="true"></i></h3>
       <iframe src="http://127.0.0.1:8000/home/{{popular.3}}" width="1000" height="1000"></iframe>
 
     </div>
