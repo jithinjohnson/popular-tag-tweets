@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>details</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!---->
+</head>
+<body>
+
+
+
+<div class="container">
+
+  <div class="panel-group">
+      {%for i in data%}
+    <div class="panel panel-primary">
+      <div class="panel-heading">@{{i.name}}</div>
+      <div class="panel-body">{{i.text}}</div>
+    </div>
+      {%endfor%}
+
+
+  </div>
+</div>
+<!--{%for i in data%}
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-body"><{{i.name}}:</div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-body">{{i.text}}</div>
+  </div>
+</div>
+{%endfor%}-->
+
+
+</body>
+</html>
